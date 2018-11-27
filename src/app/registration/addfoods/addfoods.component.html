@@ -1,0 +1,36 @@
+<app-header></app-header>
+<main class="main_wrapper">
+    <section class="addfoods_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 heading_tag">
+                  <h1>Add Foods</h1>
+                  <div class="drink_food_details_form_holder"> <!-- When u click add more button whole div will repet -->
+                      <form method="POST">
+                        <h2>Add your special foods</h2>
+                        <ul class="form_holder">
+                          <li><input type="text" placeholder="Food Name*" required></li>
+                          <li><textarea  placeholder="Short Description"></textarea></li>
+                          <li class="no_border">
+                            <div class="quarter margin_right_30">
+                              <input placeholder="Price*" type="number" required>
+                            </div>
+                            <div class="quarter quarter-3 custom_check_and_radio speciality_foods_controller">
+                              <label class="width_half margin_right_30">Is this your speciality food?</label>
+                              <span class="check_and_radio_holder"><input type="radio" name="speciality_foods" id="sfy"><label for="sfy">Yes</label></span>
+                              <span class="check_and_radio_holder"><input type="radio" name="speciality_foods" id="sfn"><label for="sfn">No</label></span>
+                            </div>
+                          </li>
+                          <li class="no_border text-right">
+                            <button type="button" class="add-more">Add More Food</button>
+                          </li>
+                          <li><a routerLink="/registration/step2/drinkcategory" class="button_custom violet_btn">Next</a></li>
+                        </ul>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,320 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+.main_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    padding-bottom: 160px;
+}
+.heading_tag h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #686868;
+    margin: 90px 0 40px;
+}
+.heading_tag h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #686868;
+    text-align: center;
+}
+.drink_food_details_form_holder{
+    background-color: #fff;
+    padding: 56px;
+    box-shadow: 5px 0 38px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+    max-width: 650px;
+    margin:0 auto;
+}
+.drink_food_details_form_holder::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #686868;
+}
+.drink_food_details_form_holder:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #686868;
+    opacity:  1;
+}
+.drink_food_details_form_holder::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #686868;
+    opacity:  1;
+}
+.drink_food_details_form_holder:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #686868;
+}
+.drink_food_details_form_holder::-ms-input-placeholder { /* Microsoft Edge */
+    color: #686868;
+}
+.drink_food_details_form_holder::placeholder { /* Most modern browsers support this now. */
+    color: #686868;
+}
+.drink_food_details_form_holder li input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.drink_food_details_form_holder li textarea,
+.drink_food_details_form_holder li select{
+    font-size: 14px;
+    color: #686868;
+    border: none;
+    padding:10px 0;
+    resize: none;
+    width: 100%;
+    position: relative;
+    display: block;
+    background-color: transparent;
+} 
+.select_holder select option{
+    background-color: #f4f4f4;
+    font-size: 14px;
+}
+.tringle_arrow{
+    position: relative;
+}
+.tringle_arrow::after {
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #8f2de2;
+    font-size: 19px;
+    top: 10px;
+    right: 0;
+    pointer-events: none;
+}
+.tringle_arrow select{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.drink_food_details_form_holder li,
+.drink_food_details_form_holder li.no_border .quarter{
+    border-bottom: 1px solid #8f2de2;
+    position: relative;
+}
+.drink_food_details_form_holder li::after,
+.drink_food_details_form_holder li.no_border .quarter::after{
+    width:0;
+    position: absolute;
+    content: "";
+    background-color: #8f2de2;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: all ease-in-out 0.5s;
+}
+.drink_food_details_form_holder li.no_border .quarter::after{
+    top: auto;
+}
+.drink_food_details_form_holder li.no_border,
+.drink_food_details_form_holder li:last-child{
+    border-bottom: none;
+}
+.drink_food_details_form_holder li:last-child::after,
+.drink_food_details_form_holder li.no_border::after{
+    display: none;
+}
+.drink_food_details_form_holder li:focus-within::after,
+.drink_food_details_form_holder li.no_border .quarter:focus-within::after{
+    width:100%;
+} 
+.drink_food_details_form_holder li label{
+    font-size: 14px;
+    color: #686868;
+}
+.full_width{
+    width:100%;
+}
+.drink_food_details_form_holder li{
+    margin-bottom: 20px;
+}
+.drink_food_details_form_holder li .quarter{
+    width:24%;
+    display: inline-block;
+    vertical-align: top;
+}
+.drink_food_details_form_holder li .quarter-3{
+    width:70%;
+}
+.margin_right_30{
+    margin-right:30px;
+}
+.button_custom{
+    color:#fff;
+    max-width:170px;
+    width: 100%;
+    display: block;
+    padding:10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin:50px auto 0;
+    text-align: center;
+}
+.violet_btn{
+    background-color: #8f2de2;
+    box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
+}
+.width_half{
+    width:61%;
+}
+.drink_food_details_form_holder li span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.custom_check_and_radio .check_and_radio_holder{
+    position: relative;
+}
+.drink_food_details_form_holder li span:last-child{
+    margin-right:0;
+}
+/* Radio Button and Check Box  Custom */
+.custom_check_and_radio input[type="radio"]:checked,
+.custom_check_and_radio input[type="radio"]:not(:checked),
+.custom_check_and_radio input[type="checkbox"]:checked,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.custom_check_and_radio input[type="radio"]:checked + label,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label,
+.custom_check_and_radio input[type="checkbox"]:checked + label,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label
+{
+    color: #686868;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 28px;
+    position: relative;
+}
+.custom_check_and_radio input[type="radio"]:checked + label:before,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:before,
+.custom_check_and_radio input[type="checkbox"]:checked + label:before,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:before {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #8d2fdf;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 15px;
+}
+.custom_check_and_radio input[type="radio"]:checked + label:after,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:after,
+.custom_check_and_radio input[type="checkbox"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    background: #8d2fdf none repeat scroll 0 0;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    transition: all 0.2s ease 0s;
+    width: 15px;
+}
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.custom_check_and_radio input[type="radio"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.custom_check_and_radio input[type="checkbox"]:checked + label:before,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+.custom_check_and_radio input[type="checkbox"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    border-radius:0;
+}
+
+/* Radio Button and Check Box  Custom */
+
+.speciality_foods_controller label{
+    margin-bottom:0;
+}
+.speciality_foods_controller > span{
+    padding:10px 0;
+}
+.add-more{
+    color: #8f2de2;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Media Css */
+
+@media (min-width:320px) and (max-width:767px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+    .drink_food_details_form_holder {
+        padding: 20px;
+    }
+    .margin_right_30{
+        margin-right: 15px;
+    }
+    .drink_food_details_form_holder li .quarter,
+    .width_half{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .width_half{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:480px) and (max-width:767px){
+    .width_half{
+        width:61%;
+    }
+}
+@media (min-width:768px) and (max-width:959px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+    .drink_food_details_form_holder {
+        padding: 40px;
+    }
+    .margin_right_30{
+        margin-right: 24px;
+    }
+}
+@media (min-width:960px) and (max-width:1199px){
+    .width_half{
+        width: 60%;
+    }
+}
+@media (min-width:1200px) and (max-width:1290px){
+    .width_half{
+        width: 55%;
+    }
+    .margin_right_30 {
+        margin-right: 27px;
+    }
+}
+@media (min-width:1291px) and (max-width:1337px){
+    .width_half{
+        width: 55%;
+    }
+}

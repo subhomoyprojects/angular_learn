@@ -1,0 +1,54 @@
+<app-header></app-header>
+<main class="main_wrapper">
+    <section class="adddrinks_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 offset-md-2 offset-lg-3 offset-xl-3 heading_tag">
+                  <h1>Add Drinks</h1>
+                  <div class="drink_food_details_form_holder">
+                      <form method="POST">
+                        <ul class="form_holder">
+                          <li><input type="text" placeholder="Drink Name*" required></li>
+                          <li><textarea  placeholder="Short Description"></textarea></li>
+                          <li class="no_border">
+                            <div class="quarter margin_right_30">
+                              <input placeholder="Price*" type="number" required>
+                            </div>
+                            <div class="quarter quarter-3">
+                              <div class="select_holder tringle_arrow">
+                                <select>
+                                  <option>Select Drink Type*</option>
+                                  <option value="Beer">Beer</option>
+                                  <option value="Whisky">Whisky</option>
+                                  <option value="Vodka">Vodka</option>
+                                  <option value="Rum">Rum</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select_holder tringle_arrow">
+                                <select>
+                                  <option>Select Brand</option>
+                                  <option value="Vat 69">Vat 69</option>
+                                  <option value="Old Mug">Old Mug</option>
+                                  <option value="Black Dog">Black Dog</option>
+                                  <option value="Emperor Blue">Emperor Blue</option>
+                                </select>
+                              </div>
+                          </li>
+                          <li class="no_border custom_check_and_radio">
+                            <label class="width_half margin_right_30">Is this your speciality drinks?</label>
+                            <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="sdy"><label for="sdy">Yes</label></span>
+                            <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="sdn"><label for="sdn">No</label></span>
+                          </li>
+                          <li><button type="submit" class="button_custom violet_btn">Next</button></li>
+                        </ul>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>

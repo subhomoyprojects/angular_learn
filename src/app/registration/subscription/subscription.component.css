@@ -1,0 +1,145 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+.main_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    padding-bottom: 160px;
+}
+.heading_tag h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #686868;
+    margin: 90px 0 40px;
+}
+.plan_box_holder{
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.plan_price{
+    padding: 20px;
+    text-align:center;
+    position: relative;
+}
+.plan_price::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACqCAMAAAB/JZgTAAAApVBMVEUAAADj4+P29vbe3t7z8/Pu7u7m5ua/v7+7u7vX19fT09PS0tLKysq5ubm4uLjq6urg4ODY2NjNzc3BwcG6urq6urq4uLj09PTw8PDV1dXOzs7KysrGxsbAwMC+vr69vb28vLy4uLj4+Pjc3Nza2trQ0NDLy8vHx8fGxsbCwsLBwcG9vb27u7vl5eXFxcW/v7/o6OjJycnExMT////9/f37+/v5+fkQ2/BTAAAAM3RSTlMA7/7o/fr0WS3XzseiFQX469yzZSUdCP380rqoil9NSDQN/uTgwquXknFsQCnyhFL2nYBA+60IAAADAUlEQVR42uXYB27bQBBG4Z+dKqSa1XuXVW2Ly/sfLUYMGHCNglgIxfdu8GGxM8DoDGmOkRYw0hJG2sNIyxjpE0YaYKQhRZrEFKknitTCSAsYaQ8jXWOkAUWaRBRpRxRpFSMtYqRrjPREkZoWReqLIu1ipGuMdEyR2qJIHYy0jpEOKdJZTJE6okhXGOmYIu2IIi1gpE8UaRpRpHNRpI8UqbmjSKuiSB8pUtOkSB1RpAOK1J5SpAVRpA2KtCKKdEWRpk2KtCaKNKBID6JINxRpp0WR1gWR2hFFWhJEmoYUaVEQqZlQpF1BpGZCkRYFkc72FOlSEGm7SZGuBJFWWhTpURBpVRCpGVOkRUGkbpMi3QgirQoiTXcUaV0QqR9DpGYkiLQniNRvQaTpWBBpXxCpI4jUDSHS5F4Q6VIQqRVDpG4ohtRsBZHWBZEuBJH6EUTqTsSQmoYY0mQtiLQniLQmiNSaQqR+UwyptxdD6u7EkLZPYkjtQAxp2hBDmt6LIX2GMqTPUIY03YohtRtiSNuBGNLOSAxpZSKG1L8TQ+pEYki7sRDSpC4hpOlADGknEEN6CMWQ1qZCSE1fQkjdhhhSKxRCmixjIaTuvYSQOqEQ0rQsIaSHnRDSZNkSQloZSgRpUoyEkD4MJYI0rbckAaTVl5Gbe2l7rZdyLk26r2fOfEutk17Ls9R7cxPLr9Suv72g5FX68YPmU5osxnpfHqXJ/KSP5U+aOIE+K3fS6lCfly9p4jT0VXmSmsJYX5cfqb0M9V15kXqrSN+XD6k1iPWnciCddUe6oJuXHsqRLuq2pe3i5c95w1IzP7Z0ebcqTaxyU3/VTUoTqx/qv3e+dqbanygLna+avdg0lZHOVyt5KDViZafzdeoUNntlq/PP59XKO2Wvn0Uav7jJxvy5otQ81FbDqbLbTyDbVrGcaeTv0n8hppV56XF7p9voLjj2SzXLM5cDjWfVSv1jcCvE9+1H20G5VyosHMuveK5tz15cM9t2vYpvOYtCqVcebEdZWx+X9QtNtcBzfGpNbwAAAABJRU5ErkJggg==) no-repeat;
+    width:100%;
+    height: 100%;
+    pointer-events: none;
+    content: "";
+    background-size: 64% 100%;
+    z-index: 0;
+}
+.plan_price img,.plan_price h2,.plan_price h3{
+    margin-bottom:5px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.plan_price h3{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 16px;
+}
+.plan_price h2{
+    font-size: 40px;
+}
+.plan_description li{
+    color:#686868;
+    padding:15px 0 15px 35px;
+    border-bottom: 1px solid #eee;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+}
+.plan_description li::before{
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/sprite.png);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 18px;
+    pointer-events: none;
+    width:20px;
+    height: 20px;
+}
+.plan_description li:last-child{
+    border-bottom: none;
+}
+.plan_description{
+    padding: 55px 20px;
+    min-height: 350px;
+    position: relative;
+}
+.plan_description button{
+    color:#fff;
+    max-width:192px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    padding:10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    left: 0;
+    right: 0;
+    bottom: -17px;
+    cursor: pointer;
+}
+.gray_side{
+    box-shadow: 5px 0 38px rgba(0,0,0,0.04);
+}
+.gray_side .plan_price::before{
+   opacity: 0.07;
+}
+.gray_side .plan_price{
+    background-color: #686868;
+}
+.gray_side .plan_description li::before{
+    background-position: 0 0;
+}
+.gray_side .plan_description button{
+    background-color: #686868;
+    box-shadow: 5px 0px 38px rgba(104,104,104,0.40);
+}
+
+.violate_side{
+    box-shadow: 5px 0 38px rgba(143,45,226,0.17);
+}
+.violate_side .plan_price::before{
+   opacity: 0.14;
+}
+.violate_side .plan_price{
+    background-color: #8f2de2;
+}
+.violate_side .plan_description li::before{
+    background-position: -30px 0;
+}
+.violate_side .plan_description button{
+    background-color: #8f2de2;
+    box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
+}
+@media (min-width:320px) and (max-width:959px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+}
+@media (min-width:960px) and (max-width:1199px){
+    .plan_description{
+        min-height: 420px;
+    }
+}

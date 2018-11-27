@@ -1,0 +1,33 @@
+<app-header></app-header>
+<main class="main_wrapper">
+    <section class="basicdetails_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 offset-md-2 offset-lg-3 offset-xl-3 heading_tag">
+                  <h1>Basic Details</h1>
+                  <div class="basic_details_form_holder">
+                    <form method="POST">
+                      <ul class="form_holder">
+                        <li><textarea  placeholder="Enter your address here*" required></textarea></li>
+                        <li><input type="number" placeholder="PinCode*"></li>
+                        <li class="no_border">
+                          <label>Open Hours*</label>
+                          <div class="half no_border margin_right_30">
+                            <ngb-timepicker [(ngModel)]="time" [meridian]="meridian" name="time"></ngb-timepicker>
+                          </div>
+                          <div class="half no_border">
+                            <div class="input-group">
+                              <ngb-timepicker [(ngModel)]="time1" [meridian]="meridian" name="time1"></ngb-timepicker>
+                            </div>
+                          </div>
+                        </li>
+                        <li><a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Next</a></li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>

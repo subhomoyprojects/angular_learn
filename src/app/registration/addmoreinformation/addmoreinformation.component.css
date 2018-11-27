@@ -1,0 +1,486 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #686868;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #686868;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #686868;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #686868;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #686868;
+}
+::placeholder { /* Most modern browsers support this now. */
+    color: #686868;
+}
+.main_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    padding-bottom: 160px;
+}
+.heading_tag h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #686868;
+    margin: 90px 0 40px;
+}
+.add_more_info_form_holder{
+    background-color: #fff;
+    padding: 56px;
+    box-shadow: 5px 0 38px rgba(0,0,0,0.04);
+}
+.plus_icon,.minus_icon{
+    width:27px;
+    height: 27px;
+    display: inline-block;
+    margin-right:15px;
+    vertical-align: middle;
+}
+.plus_icon{
+    background:url(/assets/images/sprite.png) no-repeat;
+    background-position: -86px 0;
+}
+.minus_icon{
+    background:url(/assets/images/sprite.png) no-repeat;
+    background-position: -218px 0;
+}
+.upload_file{
+    box-shadow: 5px 0 38px rgba(157,157,157,0.28);
+    padding: 10px 25px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #8f2de2;
+    text-transform: capitalize;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.upload_file span{
+    display: inline-block;
+    vertical-align: middle
+}
+.img_and_video_thumbnel_holder{
+    display: table;
+    margin: 0 auto;
+    padding:40px 0;
+    width:100%;
+    max-width:100%;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+.thumbnel_holder{
+    position: relative;
+    width:100%;
+    max-width:160px;
+    max-height: 160px;
+    min-height: 160px;
+    border-radius: 6px;
+    border:2px solid rgba(255,255,255,0.5);
+    box-shadow: 5px 0 38px rgba(157,157,157,0.20);
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.thumbnel_holder > img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.thumbnel_holder > img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.close_btn{
+    width:41px;
+    height: 41px;
+    position: absolute;
+    background: url(/assets/images/sprite.png) no-repeat;
+    background-position: -123px 0;
+    cursor: pointer;
+    border:none;
+    display: block;
+    top: -16px;
+    right: -14px;
+    z-index: 99;
+    opacity: 1;
+}
+.thumbnel_holder{
+    margin-right: 15px;
+}
+.thumbnel_holder:last-child{
+    margin-right:0;
+}
+.margin_top_40{
+    margin-top:40px;
+}
+.video_icon{
+    width:34px;
+    height: 34px;
+    background: url(/assets/images/sprite.png) no-repeat;
+    background-position: -174px 0;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+.add_more_info_form_holder li input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.add_more_info_form_holder li textarea,
+.add_more_info_form_holder li select{
+    font-size: 14px;
+    color: #686868;
+    border: none;
+    padding:10px 0;
+    resize: none;
+    width: 100%;
+    position: relative;
+    display: block;
+    background-color: transparent;
+} 
+.add_more_info_form_holder li{
+    border-bottom: 1px solid #8f2de2;
+    position: relative;
+}
+.add_more_info_form_holder li::after,.social_dropdown_and_sociallinks::after{
+    width:0;
+    position: absolute;
+    content: "";
+    background-color: #8f2de2;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: all ease-in-out 0.5s;
+}
+.add_more_info_form_holder li.no_border .quarter::after{
+    top: auto;
+}
+.add_more_info_form_holder li.no_border{
+    border-bottom: none;
+}
+.add_more_info_form_holder li.no_border::after{
+    display: none;
+}
+.add_more_info_form_holder li:focus-within::after,
+.social_dropdown_and_sociallinks:focus-within::after{
+    width:100%;
+} 
+.add_more_info_form_holder li label{
+    font-size: 14px;
+    color: #686868;
+}
+.add_more_info_form_holder li{
+    margin-bottom: 20px;
+}
+.width_half{
+    width:25%;
+}
+.add_more_info_form_holder li span{
+    display: inline-block;
+    margin-right: 30px;
+}
+.custom_check_and_radio .check_and_radio_holder{
+    position: relative;
+}
+.add_more_info_form_holder li span:last-child{
+    margin-right:0;
+}
+/* Radio Button and Check Box  Custom */
+.custom_check_and_radio input[type="radio"]:checked,
+.custom_check_and_radio input[type="radio"]:not(:checked),
+.custom_check_and_radio input[type="checkbox"]:checked,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.custom_check_and_radio input[type="radio"]:checked + label,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label,
+.custom_check_and_radio input[type="checkbox"]:checked + label,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label
+{
+    color: #686868;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 28px;
+    position: relative;
+}
+.custom_check_and_radio input[type="radio"]:checked + label:before,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:before,
+.custom_check_and_radio input[type="checkbox"]:checked + label:before,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:before {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #8d2fdf;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 15px;
+}
+.custom_check_and_radio input[type="radio"]:checked + label:after,
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:after,
+.custom_check_and_radio input[type="checkbox"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    background: #8d2fdf none repeat scroll 0 0;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    transition: all 0.2s ease 0s;
+    width: 15px;
+}
+.custom_check_and_radio input[type="radio"]:not(:checked) + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.custom_check_and_radio input[type="radio"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.custom_check_and_radio input[type="checkbox"]:checked + label:before,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+.custom_check_and_radio input[type="checkbox"]:checked + label:after,
+.custom_check_and_radio input[type="checkbox"]:not(:checked) + label:after {
+    border-radius:0;
+}
+
+/* Radio Button and Check Box  Custom */
+.margin_right_30{
+    margin-right:30px;
+}
+.add_more_info_form_holder textarea{
+    height: 65px;
+}
+.social_dropdown_and_sociallinks .d-inline-block > button{
+    color:#8d2fdf;
+    font-size: 28px;
+    line-height: 28px;
+    display: inline-block;
+    width:66px;
+}
+.social_dropdown_and_sociallinks .d-inline-block{
+    vertical-align: top;
+}
+.social_dropdown_and_sociallinks .social_icon_btn::after{
+    display: none;
+}
+.social_dropdown_and_sociallinks .social_icon_btn{
+    position: relative;
+    padding:7px 30px 7px 7px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.tringle_arrow{
+    position: relative;
+}
+.tringle_arrow::before {
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #000;
+    font-size: 19px;
+    top: 8px;
+    right: 8px;
+    pointer-events: none;
+}
+.social_icon_btn .fa{
+    margin-right:5px;
+}
+.social_dropdown_and_sociallinks{
+    display: inline-block;
+    margin-right: 30px;
+    width: 100%;
+    max-width: 90%;
+    border-bottom: 1px solid #8f2de2;
+    position: relative;
+}
+.add_more_info_form_holder .social_links_holder li .social_dropdown_and_sociallinks input{
+    display: inline-block;
+    max-width: 75%;
+    margin-left:20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.add_more{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-right: 0;
+    bottom: 0;
+}
+.social_links_holder li .dropdown-item span{
+    font-size: 14px;
+    color: #686868;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+/* social Link Color Control */
+.social_dropdown_and_sociallinks .d-inline-block button .fa-facebook-official{
+    color:#3a559f;
+}
+.social_dropdown_and_sociallinks .d-inline-block button .fa-twitter-square{
+    color:#00aced;
+}
+.social_dropdown_and_sociallinks .d-inline-block button .fa-instagram{
+    color:#ab9a90;
+}
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button{
+    cursor: pointer;
+}
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:active .fa,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:active span,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:hover .fa,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:hover span,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:focus .fa,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:focus span,
+.social_dropdown_and_sociallinks .d-inline-block .dropdown-menu button:hover{
+    color:#fff;
+    background-color: #8d2fdf;
+}
+/* social Link Color Control */
+
+.add_more_info_form_holder .card{
+    border:none;
+    margin-top:20px;
+}
+.button_custom{
+    color:#fff;
+    max-width:170px;
+    width: 100%;
+    display: block;
+    padding:10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin:50px auto 0;
+    text-align: center;
+}
+.violet_btn{
+    background-color: #8f2de2;
+    box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
+}
+.img_and_video_slider_controller{
+    max-width: 535px;
+    margin: 0 auto;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+    .add_more_info_form_holder {
+        padding: 20px;
+    }
+    .margin_right_30{
+        margin-right: 15px;
+    }
+    .thumbnel_holder {
+        margin-right: 10px;
+    }
+}
+@media (min-width:320px) and (max-width:479px){
+    .thumbnel_holder{
+        max-width: 70px;
+        max-height: 70px;
+        min-height: 70px;
+    }
+    .width_half {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .social_dropdown_and_sociallinks .d-inline-block > button {
+        font-size: 20px;
+        line-height: 20px;
+        width: 50px;
+    }
+    .add_more_info_form_holder li span {
+        margin-right: 10px;
+    }
+    .add_more_info_form_holder .social_links_holder li .social_dropdown_and_sociallinks input {
+        max-width: 68%;
+        margin-left: 10px;
+    }
+    .add_more {
+        right: -20px;
+    }
+}
+@media (min-width:480px) and (max-width:639px){
+    .thumbnel_holder {
+        max-width: 122px;
+        max-height: 122px;
+        min-height: 122px;
+    }
+    .social_dropdown_and_sociallinks .d-inline-block > button {
+        font-size: 20px;
+        line-height: 20px;
+        width: 50px;
+    }
+}
+@media (min-width:768px) and (max-width:959px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+    .add_more_info_form_holder {
+        padding: 40px;
+    }
+    .margin_right_30{
+        margin-right: 24px;
+    }
+    .thumbnel_holder {
+        margin-right: 10px;
+    }
+}
+@media (min-width:1200px) and (max-width:1360px){
+    .thumbnel_holder {
+        max-width: 134px;
+        max-height: 134px;
+        min-height: 134px;
+    }
+}

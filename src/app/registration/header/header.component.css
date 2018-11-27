@@ -1,0 +1,158 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+.header_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+}
+.logo_container{
+    background-color: #686868;
+    padding: 25px 0;
+}
+.flow_line_wrapper{
+    position: relative;
+    min-height: 50px;
+    margin-top: 40px;
+    overflow-x: hidden;
+}
+.flow_line_wrapper::before{
+    position: absolute;
+    content: "";
+    background-color: #eee;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 25px;
+}
+.flow_line_pointer_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 67%;
+    margin: 0 auto;
+}
+.flow_line_pointer_wrapper li{
+    width:25%;
+    text-align: center;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    z-index: 9;
+}
+.flow_line_pointer_wrapper li::before,
+.flow_line_pointer_wrapper li.active::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #8f2de2;
+    visibility: hidden;
+    top: 0;
+    margin-top: 25px;
+    z-index: 0;
+    transition: all ease-in-out 0.3s;
+}
+.flow_line_pointer_wrapper li.active::before{
+    width:100%;
+    visibility: visible;
+}
+.flow_line_pointer_wrapper li:first-child::before{
+    left: -500px;
+}
+.flow_line_pointer_wrapper li:first-child.active::before,
+.flow_line_pointer_wrapper li:first-child.active:hover::before{
+    width:calc(100% + 500px);
+    left: -500px;
+}
+.flow_line_pointer_wrapper li:last-child::before{
+    left: 0;
+}
+.flow_line_pointer_wrapper li:last-child.active::before,
+.flow_line_pointer_wrapper li:last-child.active:hover::before{
+    width:calc(100% + 500px);
+}
+
+.flow_line_pointer_wrapper li div{
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.flow_line_pointer_wrapper li div span{
+    display: block;
+    width:50px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 100%;
+    background-color: #fafafa;
+    border: 3px solid #eee;
+    font-size: 24px;
+    font-weight: 400;
+    color:#909090;
+    margin: 0 auto;
+}
+.flow_line_pointer_wrapper li div strong{
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #909090;
+}
+.flow_line_pointer_wrapper li.active div span{
+    background-color: #8f2de2;
+    border: 3px solid #8f2de2;
+    color:#fff;
+}
+.flow_line_pointer_wrapper li.active div strong{
+    color: #8f2de2;
+}
+@media (min-width:320px) and (max-width:570px){
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_wrapper::before,.flow_line_pointer_wrapper li::before, .flow_line_pointer_wrapper li.active::before{
+        margin-top: 25px;
+        top: 0;
+    }
+    .flow_line_pointer_wrapper li div strong {
+        font-size: 11px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:320px) and (max-width:570px){
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_pointer_wrapper li div strong {
+        font-size: 11px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:571px) and (max-width:767px){
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_pointer_wrapper li div strong {
+        font-size: 13px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:768px) and (max-width:959px){
+    .flow_line_pointer_wrapper{
+        max-width: 80%;
+    }
+}

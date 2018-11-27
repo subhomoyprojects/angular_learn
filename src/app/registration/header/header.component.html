@@ -1,0 +1,33 @@
+<header class="header_wrapper">
+  <div class="logo_container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 logo">
+          <a routerLink="/registration/step1"><img src="../assets/images/logo_white.png" alt="Logo"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flow_line_wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <ul class="flow_line_pointer_wrapper">
+            <li [routerLinkActive]="['active']">
+              <div routerLink="/registration/step2/subscription"><span>1</span><strong>Subscription Plan</strong></div>
+            </li>
+            <li [routerLinkActive]="['active']">
+              <div routerLink="/registration/step2/basicdetails"><span>2</span><strong>Basic Details</strong></div>
+            </li>
+            <li [routerLinkActive]="['active']">
+              <div routerLink="/registration/step2/addfoods"><span>3</span><strong>Add Drinks & Foods</strong></div>
+            </li>
+            <li [routerLinkActive]="['active']">
+              <div routerLink="/registration/step2/happyhours"><span>4</span><strong>Add Special Offers</strong></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

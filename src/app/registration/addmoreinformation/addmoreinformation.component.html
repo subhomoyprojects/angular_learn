@@ -1,0 +1,252 @@
+<app-header></app-header>
+<main class="main_wrapper">
+  <section class="addmoreinfo_wrapper">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 heading_tag">
+                <h1>Add More Information</h1>
+                <div class="add_more_info_form_holder">
+                  <form method="POST">
+                    <div class="file_type_controller">
+                      <input id="uploadFile" style="display: none;" type="file">
+                      <button type="button" class="upload_file" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Pictures</span></button>
+                    </div>
+                    <!-- <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-carousel> -->
+                    <div class="mt-4 owl-controler">
+                      <owl-carousel-o class="img_and_video_slider_controller" [options]="owl1">
+                        
+                        <ng-template carouselSlide id="owl-slide-1">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-2">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-3">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        
+                      </owl-carousel-o>
+                    </div>
+                    <div class="file_type_controller">
+                      <input id="uploadFile" style="display: none;" type="file">
+                      <button type="button" class="upload_file margin_top_40" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Videos</span></button>
+                    </div>
+                    <!-- <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                              <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <button type="button" class="video_icon"></button>
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-carousel> -->
+                    <div class="mt-4 owl-controler">
+                      <owl-carousel-o class="img_and_video_slider_controller" [options]="owl2">
+                        <ng-template carouselSlide id="owl-slide-4">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-5">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-6">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        <ng-template carouselSlide id="owl-slide-6">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        
+                      </owl-carousel-o>
+                    </div>
+
+                      <ul class="margin_top_40 form_holder">
+                        <li><textarea  placeholder="Add Description* (100 Words)"></textarea></li>
+                        <li class="no_border custom_check_and_radio">
+                          <label class="width_half margin_right_30">Live Music?</label>
+                          <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="sdy"><label for="sdy">Yes</label></span>
+                          <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="sdn"><label for="sdn">No</label></span>
+                        </li>
+                        <li><textarea  placeholder="Music Description"></textarea></li>
+                      </ul>
+                      <button type="button" class="upload_file margin_top_40" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><span class="plus_icon"></span> Add Social Links</button>
+                      <div id="collapseExample" [ngbCollapse]="!isCollapsed">
+                        <div class="card">
+                          <div class="card-body">
+                            <ul class="social_links_holder">
+                              <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                  <div ngbDropdown class="d-inline-block">
+                                    <button class="tringle_arrow social_icon_btn" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                      <button class="dropdown-item"><i class="fa fa-facebook-official" aria-hidden="true"></i> <span>Facebook</span></button>
+                                      <button class="dropdown-item"><i class="fa fa-twitter-square" aria-hidden="true"></i> <span>Twitter</span></button>
+                                      <button class="dropdown-item"><i class="fa fa-instagram" aria-hidden="true"></i> <span>Instagram</span></button>
+                                    </div>
+                                  </div>
+                                  <input type="text" value="Facebook link goes here">
+                                </span>
+                                <button class="minus_icon add_more" type="button"></button>
+                              </li>
+                              <li class="no_border">
+                                  <span class="social_dropdown_and_sociallinks">
+                                    <div ngbDropdown class="d-inline-block">
+                                      <button class="tringle_arrow social_icon_btn" id="dropdownBasic2" ngbDropdownToggle><i class="fa fa-twitter-square" aria-hidden="true"></i></button>
+                                      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                                        <button class="dropdown-item"><i class="fa fa-facebook-official" aria-hidden="true"></i> <span>Facebook</span></button>
+                                        <button class="dropdown-item"><i class="fa fa-twitter-square" aria-hidden="true"></i> <span>Twitter</span></button>
+                                        <button class="dropdown-item"><i class="fa fa-instagram" aria-hidden="true"></i> <span>Instagram</span></button>
+                                      </div>
+                                    </div>
+                                    <input type="text" value="Twitter link goes here">
+                                  </span>
+                                  <button class="plus_icon add_more" type="button"></button>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Next</a>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+      <ng-template #open_big_image let-c="close" let-d="dismiss" class="modal_controller">
+          <div class="modal-body">
+            <button type="button" class="close close_btn model_close" aria-label="Close" (click)="d('Cross click')"></button>
+            <!-- Image Goes Here -->
+            <div class="fancy_box">
+              <img src="/assets/images/thumbnel_1.jpg" alt="Big Image">
+            </div>
+            <!-- Image Goes Here -->
+          </div>
+        </ng-template>
+  </section>
+</main>
+<app-footer></app-footer>

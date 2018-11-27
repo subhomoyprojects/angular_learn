@@ -1,0 +1,59 @@
+<main class="main_wrapper">
+  <section class="body_wrapper sign_up_wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 min_hight_100 gradient_bg signup_form_side">
+          <div class="common_holder">
+            <div class="logo_wrapper"><a routerLink="/registration/step1" class="logo_holder"><img src="../assets/images/logo.png" alt="Logo"></a></div>
+            <div class="signup_form_holder heading_tag">
+              <h1>Signup & Become a Barbuddy</h1>
+              <ngb-tabset type="pills" class="signup_tab">
+                <ngb-tab title="Register">
+                    <ng-template ngbTabContent>
+                      <form method="POST">
+                        <ul class="signup_form_controller">
+                          <li><input type="text" placeholder="Bar Name"></li>
+                          <li><input type="text" placeholder="Name"></li>
+                          <li><input type="email" placeholder="E-mail Address"></li>
+                          <li><input type="password" placeholder="Password"></li>
+                          <li><input type="number" placeholder="Phone Number"></li>
+                          <li>
+                            <p><span>Already have an account?</span> <a routerLink="/registration/step1">Login Here</a></p>
+                            <div class="signup_btn_holder"><a routerLink="/registration/step2/subscription" class="next_btn">Next</a></div>
+                          </li>
+                        </ul>
+                      </form>
+                    </ng-template>
+                  </ngb-tab>
+                <ngb-tab title="Login"> <!-- [disabled]="true"-->
+                  <ng-template ngbTabContent>
+                    <form method="POST">
+                      <ul class="signup_form_controller">
+                        <li><input type="email" placeholder="E-mail Address"></li>
+                        <li><input type="password" placeholder="Password"></li>
+                        <li>
+                          <p><span>Don't have an account?</span> <a routerLink="/registration/step1">Register Here</a></p>
+                          <div class="signup_btn_holder"><a routerLink="/registration/step2/subscription" class="next_btn">Login</a></div>
+                        </li>
+                      </ul>
+                    </form>
+                  </ng-template>
+                </ngb-tab>
+              </ngb-tabset>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 min_hight_100 signup_image_bg signup_description_side">
+          <div class="signup_description_holder">
+            <ul class="signup_text">
+              <li><img src="assets/images/1.png" alt="1"><span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </span></li>
+              <li><img src="assets/images/2.png" alt="2"><span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </span></li>
+              <li><img src="assets/images/3.png" alt="3"><span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </span></li>
+            </ul>
+          </div>
+          <div class="copy_right_holder"><p class="copy_right">&copy; Barbuddy 2018</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
